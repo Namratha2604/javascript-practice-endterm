@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celcius to fareinheit</title>
+    <style>
+        #btn{
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="number" id="temp">Celcius
+    <button onclick="hii()" id="btn">Convert</button>
+    <h1 id="hlo"></h1>
+</body> -->
+<script>
+    // function hii(){
+    //     let celcius = document.getElementById("temp").value;
+    //     // alert(celcius);
+    //     let fareinheit = (celcius * 1.8)+32;
+    //     document.getElementById("hlo").innerHTML=`${celcius} Degrees celcius = ${fareinheit} Degrees fareinheit`
+    // }
+
+
+//     function main(){
+
+//     function hii(){
+//    const celsius = prompt("Enter a temp in degree celsius: ");
+//     const fahrenheit = (celsius * 1.8) +32;
+//     console.log(`${celsius} degree celsius will be  equal to ${fahrenheit} degree fahrenheit.`);
+//     }
+//     function hlo(){
+//     const cel = prompt("Enter a temp in degree celsius: ");
+//     const celsius = (fahrenheit - 32) / 1.8;
+//     console.log(`${cel} degree celsius will be  equal to ${fahrenheit} degree fahrenheit.`);
+//     }
+// }
+
+
+function cToF(celsius) 
+{
+  var cTemp = celsius;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+    console.log(message);
+}
+
+function fToC(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+    console.log(message);
+} 
+cToF(60);
+fToC(45);
+
+  </script>
+</html>
+</html>
